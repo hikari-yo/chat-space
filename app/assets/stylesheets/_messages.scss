@@ -21,6 +21,15 @@ $white: #ffffff;
   padding: 36px 20px;
   height: 100px;
   align-items: center;
+  &__box{
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    &__menu{
+      display: flex;
+    }
+  }
 }
 
 .icon{
@@ -29,16 +38,6 @@ $white: #ffffff;
   margin-left: 5px;
 }
 
-.side-header__box{
-  font-size: 16px;
-  font-weight: bold;
-  display: flex;
-  justify-content: space-between;
-}
-
-.side-header__box__menu{
-  display: flex;
-}
 
 .groups{
   background: #2f3e51;
@@ -50,17 +49,13 @@ $white: #ffffff;
 .group{
   height: 45px;
   margin: 0px 0px 40px;
+  &__group-name{
+    font-size: 15px;
+  }
+  &__latest-message{
+    font-size: 11px;
+  }
 }
-
-.group__group-name{
-  font-size: 15px;
-}
-
-.group__latest-message{
-  font-size: 11px;
-}
-
-
 
 .chat-main{
   width: calc(100vw - 300px);
@@ -71,27 +66,24 @@ $white: #ffffff;
   height: 100px;
   padding: 0 40px;
   justify-content: space-between;
-}
-
-.main-header__left-box__current-group{
-  color: #333333;
-  font-size: 20px;
-  margin: 35px 0 15px;
-}
-
-.main-header__left-box__member-list{
-  color: #999999;
-  font-size: 12px;
-}
-
-.main-header__edit-btn{
-  color: #38AEF0;
-  font-size: 16px;
-  padding: 0 20px;
-  height: 40px;
-  margin-top: 28px;
-  line-height: 40px;
-  border: solid 1px #38aef0;
+  &__left-box__current-group{
+    color: #333333;
+    font-size: 20px;
+    margin: 35px 0 15px;
+  }
+  &__left-box__member-list{
+    color: #999999;
+    font-size: 12px;
+  }
+  &__edit-btn{
+    color: #38AEF0;
+    font-size: 16px;
+    padding: 0 20px;
+    height: 40px;
+    margin-top: 28px;
+    line-height: 40px;
+    border: solid 1px #38aef0;
+  }
 }
 
 .messages{
@@ -122,8 +114,6 @@ $white: #ffffff;
     color:#434A54;
   }
 }
-
-
 
 .form{
   height: 90px;
@@ -167,4 +157,3 @@ $white: #ffffff;
 .picture{
   color: block;
 }
-
