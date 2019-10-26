@@ -1,0 +1,64 @@
+.wrapper
+  .chat-side
+    .side-header
+      .side-header__box
+        %p.side-header__box__user-name
+          current_user.name
+        %ul.side-header__box__menu
+          %li.side-header__box__menu__new-group
+            = link_to "#" do
+              = fa_icon 'pencil-square-o', class: 'icon'
+          %li.side-header__box__menu__edit-user
+            = link_to "#" do
+              = fa_icon 'cog', class: 'icon'
+    
+    .groups
+      .group
+        %p.group__group-name
+          group.name
+        %p.group__latest-message
+          group.latest-last-message
+      .group
+        %p.group__group-name
+          group.name
+        %p.group__latest-message
+          group.latest-last-message
+
+  .chat-main
+    .main-header
+      .main-header__left-box
+        %h2.main-header__left-box__current-group
+          group.name
+        %ul.main-header__left-box__member-list
+          user.name
+      .main-header__edit-btn
+        Edit
+
+    .messages
+      .message
+        .message__upper-info
+          %p.message__upper-info__talker
+            yoshida
+          %p.message__upper-info__date
+            2019/10/25(Fri) 17:50
+        .message__text
+          Hellow
+      .message
+        .message__upper-info
+          %p.message__upper-info__talker
+            yoshida
+          %p.message__upper-info__date
+            2019/10/25(Fri) 17:50
+        .message__text
+          Hellow
+
+
+    .form
+      %form
+        %input.form__message{placeholder:'type a message'}
+        .form__mask
+          %label.form__mask__image
+            = fa_icon 'picture-o', class: 'picture'
+            %input.hidden{type: 'file'}
+        %input.form__submit{type: 'submit', value: 'Send'}
+
