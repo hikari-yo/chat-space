@@ -68,7 +68,7 @@ $(function(){
     })
     
     .fail(function() {
-      // alert("自動更新に失敗しました")
+      alert("自動更新に失敗しました")
     });
     };
   }
