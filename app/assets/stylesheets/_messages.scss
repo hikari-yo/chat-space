@@ -152,7 +152,7 @@ $white: #fff;
     }
   }
   &__submit{
-    background-color: lightblue;
+    background-color: $light_blue;
     border: none;
     color: $white;
     float: right;
@@ -168,3 +168,4 @@ $white: #fff;
 .picture{
   color: block;
 }
+
